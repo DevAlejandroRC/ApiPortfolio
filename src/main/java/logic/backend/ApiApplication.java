@@ -16,8 +16,8 @@ public class ApiApplication implements WebMvcConfigurer{
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins("https://danielromero-porfoliocode.web.app")
-                .allowedMethods("*")
-                .allowedHeaders("*");
+                .allowedMethods("POST")
+                .allowedHeaders("Content-Type");
     }
 
 }
